@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+
+    <script src="funcoes.js"></script>
+
+  </head>
+  <body>
+    <h1>Olá</h1>
+
+    <input type="button" value="Clique-me" onclick="executa()" />
+
+    <div id="resultado">
+    </div>
+
+
+    <input type="button" value="Conta de 1 a 10" onclick="conta()" />
+
+    <br>
+
+    <input type="button" value="Conta de 1 a 10 HTML" onclick="contaHtml()" />
+
+    <div id="resultado2">
+    </div>
+
+
+  </body>
+
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+  </script>
+</html>
