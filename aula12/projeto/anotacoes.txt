@@ -1,0 +1,20 @@
+
+
+npm install bootstrap --save
+
+
+add "../node_modules/bootstrap/dist/css/bootstrap.min.css", no .angular-cli.json
+
+
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+src/styles css
+
+
+
+npm install ngx-bootstrap --save
+
+
+
+
+ng g module app-routing
