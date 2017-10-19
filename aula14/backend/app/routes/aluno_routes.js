@@ -1,6 +1,6 @@
 module.exports = function(app, pool) {
 
-  app.post('/alunos', (req, res) => {
+  app.post('/api/alunos', (req, res) => {
 
     pool.connect((err, client, release) => {
 
@@ -30,7 +30,7 @@ module.exports = function(app, pool) {
   });
 
 
-  app.get('/alunos', (req, res) => {
+  app.get('/api/alunos', (req, res) => {
 
     const id = req.params.id;
 
@@ -64,7 +64,7 @@ module.exports = function(app, pool) {
   });
 
 
-  app.get('/alunos/:id', (req, res) => {
+  app.get('/api/alunos/:id', (req, res) => {
 
     const id = req.params.id;
 
@@ -97,11 +97,11 @@ module.exports = function(app, pool) {
 
   });
 
-  app.delete('/alunos/:id', (req, res) => {
+  app.delete('/api/alunos/:id', (req, res) => {
 
   });
 
-  app.put('/alunos/:id', (req, res) => {
+  app.put('/api/alunos/:id', (req, res) => {
 
   });
 
