@@ -1,4 +1,31 @@
-<nav>
+<!-- <nav>
   <a routerLink="/opcaoa" routerLinkActive="active">Opção A</a>
   <a routerLink="/opcaob" routerLinkActive="active">Opção B</a>
+</nav> -->
+
+<nav class="navbar navbar-default">
+
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+
+      <button type="button" class="navbar-toggle collapsed" (click)="isCollapsed = !isCollapsed">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="navbar-brand" href="#">
+         Meu Sistema
+      </div>
+    </div>
+
+    <div class="navbar-collapse collapse" [collapse]="isCollapsed">
+      <ul class="nav navbar-nav">
+        <li [ngClass]="{active: activeRoute('/opcaoa')}"><a routerLink="/opcaoa">Opção A</a></li>
+        <li routerLinkActive="active"><a routerLink="/opcaob">Opção B</a></li>
+      </ul>
+    </div>
+  </div>
+
+
 </nav>
