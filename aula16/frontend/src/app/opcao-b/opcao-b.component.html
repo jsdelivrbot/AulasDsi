@@ -1,0 +1,22 @@
+<h2>Opcao b</h2>
+
+<div *ngIf="id === NaN; then sem else com"></div>
+
+<ng-template #sem>
+  <p>
+    não foi passado parâmetro
+  </p>
+</ng-template>
+
+
+<ng-template #com>
+
+  <p>
+    o número {{id}} foi passado.
+  </p>
+
+  <pre>
+    {{id | json}}
+  </pre>
+
+</ng-template>

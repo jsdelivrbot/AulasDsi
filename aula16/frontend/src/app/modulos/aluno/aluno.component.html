@@ -1,0 +1,31 @@
+<h1>Adicionar</h1>
+Nome
+<input [(ngModel)]="nome">
+
+<p>Adicionando {{nome}}!</p>
+
+<button (click)="salvarAluno()">Salvar</button>
+
+
+
+<h1>Lista</h1>
+
+<table>
+  <tr *ngFor="let aluno of alunos">
+    <td>
+      {{aluno.id}}
+    </td>
+    <td>
+      {{aluno.nome}}
+    </td>
+    <td>
+      <button (click)="apagarAluno(aluno.id)">Apagar</button>
+    </td>
+  </tr>
+</table>
+
+
+<h1>Json</h1>
+<pre>
+  {{alunos | json}}
+</pre>
